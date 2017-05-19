@@ -1,0 +1,14 @@
+block pageData
+	- var page = {}
+	- page.path = '/blog'
+	- page.title = site.title
+
+extends /templates/default.jade
+
+block content
+	main.blog-index__main-area
+		h1.blog-index__latest-posts-title= 'Últimos posts'
+		each post in posts
+			section.blog-index__latest-posts-preview
+				a.post-title(href='/blog/' + post.slug)= post.title
+				.post-date= post.date

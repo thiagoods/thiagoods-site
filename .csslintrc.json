@@ -1,0 +1,10 @@
+{
+	"adjoining-classes"          : false,
+	"box-sizing"                 : false,
+	"box-model"                  : false,
+	"compatible-vendor-prefixes" : false,
+	"gradients"                  : false,
+	"important"                  : false,
+	"text-indent"                : false,
+	"universal-selector"         : false
+}

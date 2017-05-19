@@ -1,0 +1,26 @@
+.about {
+	padding: 3.5rem 2.5rem;
+	&__main-title {
+		display: inline-block;
+		font-size: 3.6rem;
+		line-height: 1;
+	}
+	&__main-text {
+		font-weight: 400;
+		margin-bottom: 3rem;
+		&:last-child {
+			margin-bottom: 5rem;
+		}
+	}
+	& a {
+		color: $orange;
+		font-weight: 500;
+		&:visited {
+			color: darken($orange, 10%);
+		}
+		&:hover {
+			color: $black;
+			text-decoration: underline;
+		}
+	}
+}

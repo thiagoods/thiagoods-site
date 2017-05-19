@@ -1,0 +1,28 @@
+/* Social links */
+.footer {
+	animation: slideinbottom 0.6s cubic-bezier(0.4,0,0.1,1) 0.3s forwards;
+	bottom: 0;
+	height: 6rem;
+	left: 0;
+	position: fixed;
+	right: 0;
+	transform: translateY(50rem);
+	&__social-item {
+		display: inline-block;
+		margin-right: 2rem;
+		margin-top: 1rem;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__social-link {
+		display: block;
+	}
+	&__social-icon {
+		border-radius: 50%;
+		box-shadow: 1px 1px 1px darken($mid-blue, 10%);
+		fill: $off-white;
+		height: 4rem;
+		width: 4rem;
+	}
+}

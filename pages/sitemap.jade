@@ -1,0 +1,19 @@
+include /data/site.jade
+<?xml version="1.0" encoding="UTF-8"?>
+urlset(xmlns='http://www.sitemaps.org/schemas/sitemap/0.9', xmlns:xhtml="http://www.w3.org/1999/xhtml")
+	url
+		loc= site.url
+		xhtml:link(rel= 'alternate', href=site.url + '/')/
+		changefreq= 'daily'
+		priority= '1.0'
+	url
+		loc= site.url + '/blog/'
+		xhtml:link(rel= 'alternate', href=site.url + '/blog/')/
+		changefreq= 'daily'
+		priority= '0.9'
+	each post in posts
+		url
+			loc= site.url + '/blog/' + post.slug + '/'
+		xhtml:link(rel='alternate', href= site.url + '/blog/' + post.slug)/
+		changefreq= 'monthly'
+		priority= 'o.8'

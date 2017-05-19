@@ -1,0 +1,11 @@
+.blog-index {
+	padding: 2rem;
+	text-align: center;
+	&__latest-posts-title {
+		border-bottom: 3px solid $orange;
+		display: inline-block;
+		font-family: 'Basic';
+		line-height: 0.8;
+		margin-bottom: 2rem;
+	}
+}

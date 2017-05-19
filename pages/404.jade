@@ -1,0 +1,9 @@
+block pageData
+	- var page = {}
+	- page.path = '/404.html'
+	- page.title = site.title
+
+extends /templates/default.jade
+
+block content
+	div= 'Ooops something went wrong'

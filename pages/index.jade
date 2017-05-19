@@ -1,0 +1,9 @@
+block pageData
+	- var page = {}
+	- page.path = '/'
+	- page.title = site.title
+
+extends /templates/default.jade
+
+block content
+	include ../includes/about.jade

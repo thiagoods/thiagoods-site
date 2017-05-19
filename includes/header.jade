@@ -1,0 +1,29 @@
+header.header
+	h1.header__title
+		a(href='/').
+			Thiago#[br] Oliveira
+	ul.header__nav-list
+		li.header__nav-item
+			a.header__nav-link(class=(page.path == '/' ? 'header__nav-link--active' : ''), href='/')= 'Sobre'
+		li.header__nav-item
+			a.header__nav-link(class=(page.path == '/blog' ? 'header__nav-link--active' : ''), href='/blog/')= 'Blog'
+		li.header__nav-item
+			a.header__nav-link(class=(page.path == '/projetos' ? 'header__nav-link--active' : ''), href='/projetos/')= 'Projetos'
+	footer.footer
+		ul.footer__social-list
+			li.footer__social-item
+				a.footer__social-link(href='https://github.com/thiagoods')
+					svg.footer__social-icon
+						use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#icon-github")
+			li.footer__social-item
+				a.footer__social-link(href='https://www.linkedin.com/in/toliveira89/')
+					svg.footer__social-icon
+						use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#icon-linkedin")
+			li.footer__social-item
+				a.footer__social-link(href='https://twitter.com/thiagoods_dev')
+					svg.footer__social-icon
+						use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#icon-twitter")
+			li.footer__social-item
+				a.footer__social-link(href='https://www.facebook.com/t.oliveira.souza')
+					svg.footer__social-icon
+						use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="#icon-facebook")
