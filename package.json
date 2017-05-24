@@ -6,7 +6,8 @@
     "email": "t.oliveira@outlook.com"
   },
   "scripts": {
-      "deploy": "gulp && firebase deploy"
+      "predeploy": "gulp",
+      "deploy": "firebase deploy"
   },
   "license": "MIT",
   "description": "Personal Website",
