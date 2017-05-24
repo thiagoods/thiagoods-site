@@ -6,7 +6,7 @@
     "email": "t.oliveira@outlook.com"
   },
   "scripts": {
-      "deploy": "git subtree push --prefix build origin master"
+      "deploy": "firebase deploy"
   },
   "license": "MIT",
   "description": "Personal Website",
