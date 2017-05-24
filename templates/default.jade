@@ -1,6 +1,8 @@
 include /data/site.jade
 
 block pageData
+	- var page = {}
+	- page.title = title
 
 doctype html
 html(lang='pt-BR')
@@ -8,5 +10,6 @@ html(lang='pt-BR')
 	body
 		include /includes/icons.jade
 		include /includes/header.jade
-		block content
+		main.main-area
+			block content
 		include /includes/scriptsTag.jade

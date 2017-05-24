@@ -1,5 +1,4 @@
 .about {
-	padding: 3.5rem 2.5rem;
 	&__main-title {
 		display: inline-block;
 		font-size: 3.6rem;
@@ -13,14 +12,24 @@
 		}
 	}
 	& a {
+		background-image: linear-gradient(to bottom, $orange 0%, $orange 100%);
+		background-position: 0 50%;
+		background-repeat: repeat-x;
+		background-size: 0 0;
 		color: $orange;
 		font-weight: 500;
-		&:visited {
-			color: darken($orange, 10%);
-		}
+		transition: 0.25s;
 		&:hover {
-			color: $black;
-			text-decoration: underline;
+			background-size: 100% 100%;
+			color: $off-white;
+		}
+	}
+}
+
+@media (min-width:800px) {
+	.about {
+		&__main-text:last-child {
+			margin-bottom: 3rem;
 		}
 	}
 }

@@ -26,3 +26,27 @@
 		width: 4rem;
 	}
 }
+
+@media(min-width: 800px) {
+	.footer {
+		animation: none;
+		margin-top: 2.5rem;
+		position: relative;
+		transform: none;
+		&:before {
+			background: $off-white;
+			box-shadow: 1px 1px 1px darken($mid-blue, 10%);
+			content: '';
+			display: block;
+			height: 0.3rem;
+			margin: 1rem auto;
+			width: 22rem;
+		}
+		&__social-icon {
+			transition: all 0.3s;
+		}
+		&__social-link:hover &__social-icon {
+			box-shadow: 1px 5px 4px darken($mid-blue, 10%);
+		}
+	}
+}

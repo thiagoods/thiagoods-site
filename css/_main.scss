@@ -26,3 +26,25 @@ strong {
 	margin: 3rem 0;
 	width: 10rem;
 }
+
+.main-area {
+	padding: 3.5rem 2.5rem;
+}
+
+@media (min-width:800px) {
+	.main-area {
+		left: 30rem;
+		padding: 4rem;
+		position: absolute;
+		right: 0;
+	}
+}
+
+@media (min-width:1100px) {
+	.main-area {
+		left: 40rem;
+		margin: 0 auto;
+		max-width: 78rem;
+		position: absolute;
+	}
+}

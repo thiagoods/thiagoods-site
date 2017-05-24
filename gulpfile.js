@@ -32,7 +32,7 @@ var renderPage = function(content, filename) {
 };
 
 var renderPost = function(content, filename) {
-	var jadeTemplate = jade.compileFile('./templates/post.jade', jadeOpts);
+	var jadeTemplate = jade.compileFile('./pages/blog/post.jade', jadeOpts);
 	var parsed = frontMatter(String(content));
 	var data = parsed.attributes;
 	var body = parsed.body;
@@ -100,7 +100,7 @@ var postsdb = function(blogPath) {
 	});
 
 	gulp.task('html', ['db'], function(){
-		return gulp.src(['./pages/**/*.jade', '!./pages/sitemap.jade'])
+		return gulp.src(['./pages/**/*.jade', '!./pages/sitemap.jade', '!./pages/blog/post.jade'])
 			.pipe(vinylMap(renderPage))
 			.pipe(replace('{{version}}', version))
 			.pipe(rename(function(path){
