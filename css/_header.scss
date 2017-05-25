@@ -1,21 +1,21 @@
 .header {
 	color: $off-white;
-	padding: 3.5rem 0 2.5rem;
+	padding: 2em 0 1em;
 	text-align: center;
 	text-shadow: 1px 1px 1px darken($mid-blue, 10%);
 	&__title {
-		font-size: 5rem;
+		font-size: 2.5em;
 		line-height: 0.9;
-		margin-bottom: 1.5rem;
+		margin-bottom: 0.3em;
 		text-transform: uppercase;
 		&:after {
 			background: $off-white;
 			box-shadow: 1px 1px 1px darken($mid-blue, 10%);
 			content: '';
 			display: block;
-			height: 0.3rem;
-			margin: 1rem auto;
-			width: 20rem;
+			height: 3px;
+			margin: 0.3em auto;
+			width: 4em;
 		}
 	}
 	/* Navigation */
@@ -30,19 +30,19 @@
 	}
 	&__nav-link {
 		opacity: 0.8;
-		padding: 0 1.5rem;
+		padding: 0 1em;
 		position: relative;
 		&:after {
 			background: $off-white;
 			bottom: -5px;
 			content: '';
 			height: 1px;
-			left: 1.5rem;
+			left: 1em;
 			opacity: 0;
 			position: absolute;
 			transform: scaleX(0);
 			transition: all 0.4s;
-			width: calc(100% - 3rem);
+			width: calc(100% - 2em);
 		}
 		&:hover {
 			opacity: 1;
@@ -62,25 +62,15 @@
 	.header {
 		bottom: 0;
 		left: 0;
-		padding: 4rem 0;
+		padding: 2em 0;
 		position: fixed;
 		top: 0;
-		width: 30rem;
-		&__title {
-			margin-bottom: 2.5rem;
-		}
+		width: 17em;
 		&__nav-item {
 			display: block;
-			line-height: 2;
 			&:not(:last-child) {
 				border: 0;
 			}
 		}
-	}
-}
-
-@media(min-width: 1100px) {
-	.header {
-		width: 40rem;
 	}
 }

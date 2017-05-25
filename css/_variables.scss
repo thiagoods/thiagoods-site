@@ -1,28 +1,6 @@
 /* Variables
 ======================================== */
 
-/* Grid vars */
-$pre-generated-grid: false;
-$floated-grid: false;
-$gutter-width: 2rem;
-$columns: 12;
-$gridsystem-width: 1200;
-$column-width: ($gridsystem-width / $columns);
-$total-width: 100%;
-
-/* Converting gridsystem-width to pixels */
-$grid-width: $gridsystem-width*1px;
-
-/* Media-queries sizes map */
-$sizes: (
-	xs: 0,
-	sm: 480px,
-	md: 640px,
-	lg: 800px,
-	xl: 1040px,
-	xxl: 1200px
-);
-
 /* Color variables */
 $black: #333;
 $dark-grey: #666;

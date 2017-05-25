@@ -2,15 +2,15 @@
 .footer {
 	animation: slideinbottom 0.6s cubic-bezier(0.4,0,0.1,1) 0.3s forwards;
 	bottom: 0;
-	height: 6rem;
+	height: 4em;
 	left: 0;
 	position: fixed;
 	right: 0;
-	transform: translateY(50rem);
+	transform: translateY(10em);
 	&__social-item {
 		display: inline-block;
-		margin-right: 2rem;
-		margin-top: 1rem;
+		margin-right: 1em;
+		margin-top: 0.8em;
 		&:last-child {
 			margin-right: 0;
 		}
@@ -22,15 +22,19 @@
 		border-radius: 50%;
 		box-shadow: 1px 1px 1px darken($mid-blue, 10%);
 		fill: $off-white;
-		height: 4rem;
-		width: 4rem;
+		height: 2.5em;
+		transition: all 0.3s;
+		width: 2.5em;
+	}
+	&__social-link:hover &__social-icon {
+		box-shadow: 1px 5px 4px darken($mid-blue, 10%);
 	}
 }
 
 @media(min-width: 800px) {
 	.footer {
 		animation: none;
-		margin-top: 2.5rem;
+		margin-top: 0.8em;
 		position: relative;
 		transform: none;
 		&:before {
@@ -38,15 +42,16 @@
 			box-shadow: 1px 1px 1px darken($mid-blue, 10%);
 			content: '';
 			display: block;
-			height: 0.3rem;
-			margin: 1rem auto;
-			width: 22rem;
+			height: 3px;
+			margin: 0.3em auto;
+			width: 10em;
+		}
+		&__social-item {
+			margin-right: 0.5em;
 		}
 		&__social-icon {
-			transition: all 0.3s;
-		}
-		&__social-link:hover &__social-icon {
-			box-shadow: 1px 5px 4px darken($mid-blue, 10%);
+			height: 2.2em;
+			width: 2.2em;
 		}
 	}
 }

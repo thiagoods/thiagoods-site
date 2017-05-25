@@ -1,14 +1,14 @@
 .about {
 	&__main-title {
 		display: inline-block;
-		font-size: 3.6rem;
+		font-size: 2em;
 		line-height: 1;
 	}
 	&__main-text {
 		font-weight: 400;
-		margin-bottom: 3rem;
+		margin-bottom: 1.5em;
 		&:last-child {
-			margin-bottom: 5rem;
+			margin-bottom: 2em;
 		}
 	}
 	& a {
@@ -22,14 +22,6 @@
 		&:hover {
 			background-size: 100% 100%;
 			color: $off-white;
-		}
-	}
-}
-
-@media (min-width:800px) {
-	.about {
-		&__main-text:last-child {
-			margin-bottom: 3rem;
 		}
 	}
 }
